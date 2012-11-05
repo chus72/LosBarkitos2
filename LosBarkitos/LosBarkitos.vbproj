@@ -1,0 +1,526 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D205A30C-9BCE-4A85-A518-BA07D1752912}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Chus.My.MyApplication</StartupObject>
+    <RootNamespace>Chus</RootNamespace>
+    <AssemblyName>LosBarkitos</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetZone>LocalIntranet</TargetZone>
+    <GenerateManifests>true</GenerateManifests>
+    <ManifestCertificateThumbprint>83EE399C1CBA7B66FBA140CADF389B18BB66D9F5</ManifestCertificateThumbprint>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
+    <SignManifests>false</SignManifests>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <PublishUrl>\\Chusito\Debug2011\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>226</ApplicationRevision>
+    <ApplicationVersion>3.0.0.226</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>LosBarkitos.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\release2012\</OutputPath>
+    <DocumentationFile>LosBarkitos.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySQLDriverCS, Version=3.0.1735.36021, Culture=neutral, PublicKeyToken=172f94dfb0faf263, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Archivos de programa\MySQLDriverCS\dll\MySQLDriverCS.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TextBoxDecimal, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\TextBoxDecimal\TextBoxDecimal\bin\Release\TextBoxDecimal.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Chus" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox1.Designer.vb">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutBox1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AcotadoBarkitos.Designer.vb">
+      <DependentUpon>AcotadoBarkitos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AcotadoBarkitos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AcotadoMarinaFerry.Designer.vb">
+      <DependentUpon>AcotadoMarinaFerry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AcotadoMarinaFerry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="ArrayControles.vb" />
+    <Compile Include="dlgBkt.designer.vb">
+      <DependentUpon>dlgBkt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dlgBkt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entrada.Designer.vb">
+      <DependentUpon>Entrada.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Entrada.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Extra.Designer.vb">
+      <DependentUpon>Extra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Extra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExtraP.Designer.vb">
+      <DependentUpon>ExtraP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ExtraP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAñadirGrupo.Designer.vb">
+      <DependentUpon>fAñadirGrupo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fAñadirGrupo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAñadirGuia.Designer.vb">
+      <DependentUpon>fAñadirGuia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fAñadirGuia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fEliminarGrupo.Designer.vb">
+      <DependentUpon>fEliminarGrupo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fEliminarGrupo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fEliminarGuia.Designer.vb">
+      <DependentUpon>fEliminarGuia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fEliminarGuia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fEstadisticaGrupo.Designer.vb">
+      <DependentUpon>fEstadisticaGrupo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fEstadisticaGrupo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fEstadisticaGuia.Designer.vb">
+      <DependentUpon>fEstadisticaGuia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fEstadisticaGuia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FGrupo.Designer.vb">
+      <DependentUpon>FGrupo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FGrupo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fotos.Designer.vb">
+      <DependentUpon>Fotos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fotos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCambio.Designer.vb">
+      <DependentUpon>frmCambio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCambio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGastos.Designer.vb">
+      <DependentUpon>frmGastos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGastos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GruposDia.Designer.vb">
+      <DependentUpon>GruposDia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GruposDia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GrupoConFactura.Designer.vb">
+      <DependentUpon>GrupoConFactura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GrupoConFactura.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GruposMes.Designer.vb">
+      <DependentUpon>GruposMes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GruposMes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificacionTiquetBkt.Designer.vb">
+      <DependentUpon>ModificacionTiquetBkt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModificacionTiquetBkt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BarcasPorLlegar.Designer.vb">
+      <DependentUpon>BarcasPorLlegar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BarcasPorLlegar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataGridPrinter.vb" />
+    <Compile Include="fDiario.Designer.vb">
+      <DependentUpon>fDiario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fDiario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDiarioFerry.Designer.vb">
+      <DependentUpon>fDiarioFerry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fDiarioFerry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fMensualFerry.Designer.vb">
+      <DependentUpon>fMensualFerry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fMensualFerry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LosBarkitos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LosBarkitos.Designer.vb">
+      <DependentUpon>LosBarkitos.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mensual.Designer.vb">
+      <DependentUpon>Mensual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mensual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Reservas.Designer.vb">
+      <DependentUpon>Reservas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reservas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resumen.Designer.vb">
+      <DependentUpon>Resumen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resumen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seguridad.Designer.vb">
+      <DependentUpon>Seguridad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.vb" />
+    <Compile Include="Ticket.vb" />
+    <Compile Include="Totales.Designer.vb">
+      <DependentUpon>Totales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Totales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerGrupos.Designer.vb">
+      <DependentUpon>VerGrupos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VerGrupos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutBox1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AcotadoBarkitos.resx">
+      <DependentUpon>AcotadoBarkitos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AcotadoMarinaFerry.resx">
+      <DependentUpon>AcotadoMarinaFerry.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgBkt.resx">
+      <DependentUpon>dlgBkt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entrada.resx">
+      <DependentUpon>Entrada.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extra.resx">
+      <DependentUpon>Extra.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExtraP.resx">
+      <DependentUpon>ExtraP.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fAñadirGrupo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>fAñadirGrupo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fAñadirGuia.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>fAñadirGuia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fEliminarGrupo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>fEliminarGrupo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fEliminarGuia.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>fEliminarGuia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fEstadisticaGrupo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>fEstadisticaGrupo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fEstadisticaGuia.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>fEstadisticaGuia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FGrupo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FGrupo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fotos.resx">
+      <DependentUpon>Fotos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCambio.resx">
+      <DependentUpon>frmCambio.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGastos.resx">
+      <DependentUpon>frmGastos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GruposDia.resx">
+      <DependentUpon>GruposDia.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GrupoConFactura.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GrupoConFactura.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GruposMes.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GruposMes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificacionTiquetBkt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ModificacionTiquetBkt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BarcasPorLlegar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BarcasPorLlegar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fDiario.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>fDiario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fDiarioFerry.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>fDiarioFerry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fMensualFerry.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>fMensualFerry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LosBarkitos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LosBarkitos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mensual.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Mensual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reservas.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Reservas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resumen.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Resumen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seguridad.resx">
+      <DependentUpon>Seguridad.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Totales.resx">
+      <DependentUpon>Totales.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerGrupos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>VerGrupos.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <BaseApplicationManifest Include="My Project\app.manifest" />
+    <None Include="LosBarkitos_TemporaryKey.pfx" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.1.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2005 Express</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="ADODB">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.ProcessingObjectModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LogoBarkitos.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
